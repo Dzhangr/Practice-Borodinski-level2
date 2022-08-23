@@ -7,51 +7,90 @@
   <title>Барбершоп Бородинский</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-body">
+<body class="page__body">
   <header class="page-header">
-    <!-- Главное меню -->
-    <ul class="menu">
-      <li class="item"><a class="link" href="#">Главная</a></li>
-      <li class="item"><a class="link" href="">Наши работы</a></li>
-      <li class="item"><a class="link" href="">Записаться</a></li>
-      <li class="item"><a class="link" href="">Контакты</a></li>
-      <li class="item"><a class="link" href="">Htmlacdemy</a></li>
-    </ul>
-    <!-- Меню пользователя -->
-    <a class="link" href="#">
-      Войти
-    </a>
     <!-- Логотип -->
-    <a>
-      <img class="img" src="" width="" height="" alt="Логотип Бородинский">
+    <a class="logo">
+      <img class="logo-img" src="" width="370" height="153" alt="Логотип Бородинский">
     </a>
+    <!-- Навигация -->
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <!-- Главное меню -->
+        <ul class="menu menu-list">
+          <li class="menu__item menu__item--active">
+            <a class="menu__link" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Наши работы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Записаться</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Контакты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Htmlacdemy</a>
+          </li>
+        </ul>
+        <!-- Меню пользователя -->
+        <div class="user-menu">
+          <a class="user-menu__login-link" href="#">
+            Войти
+          </a>
+        </div>
+      </div>
+    </nav>
   </header>
-  <main>
-    <h1 class="">Барбершоп Бородинский</h1>
+  <main class="page-main">
+    <h1 class="visually-hidden">Барбершоп Бородинский</h1>
     <!-- Статистика -->
-    <section class="">
-      <h2 class="">Статистика</h2>
-      <p class="">Стрижка у нас это выгодно!</p>
-      <p class="">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-      <p class="">* — приведённые данные ложь</p>
-      <p class="">1500<sup>*</sup></p>
-      <p class="">рублей вложений</p>
-      <p class="">7 200</p>
-      <p class="">секунд времени мастера</p>
-      <p class="">90 000</p>
-      <p class="">постриженных волос</p>
-      <p class="">500 000<sup>*</sup></p>
-      <p class="">лайков и комплиментов</p>
+    <section class="statistics">
+      <div class="statistics__wrapper">
+        <header class="statistics__header">
+          <h2 class="visually-hidden">Статистика барбершопа</h2>
+          <p class="slogan">Стрижка у нас это выгодно!</p>
+          <p class="intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+          <p class="">* — приведённые данные ложь</p>
+        </div>
+        <div class="money statistics__money">
+          <p class="money__number">1500<sup>*</sup></p>
+          <p class="money__description">рублей вложений</p>
+        </div>
+        <div class="time statistics__time">
+          <p class="time__number">7 200</p>
+          <p class="time__description">секунд времени мастера</p>
+        </div>
+        <div class="hair statistics__hair">
+          <p class="hair__number">90 000</p>
+          <p class="hair__description">постриженных волос</p>
+        </div>
+        <div class="likes statistics__likes">
+          <p class="likes__number">500 000<sup>*</sup></p>
+          <p class="likes__description">лайков и комплиментов</p>
+        </div>
+      </div>
     </section>
     <!-- Преимущества -->
-    <section class="">
-      <h2 class="">Преимущества</h2>
-      <h3 class="">Быстро</h3>
-      <p class="">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной cтрижки-минутки</p>
-      <h3 class="">Круто</h3>
-      <p class="">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
-      <h3 class="">Дорого</h3>
-      <p class="">Наши мастера — профессионалы своего дела не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <div class="advantages__wrapper">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Быстро</h3>
+            <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной cтрижки-минутки</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Круто</h3>
+            <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Дорого</h3>
+            <p class="advantages__description">Наши мастера — профессионалы своего дела не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Новости и акции -->
     <section class="">
